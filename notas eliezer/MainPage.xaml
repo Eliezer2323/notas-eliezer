@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="notas_eliezer.MainPage">
+
+
+    <StackLayout Margin="20,20,20,20" Spacing="10">
+        <Grid RowSpacing="10">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Entry x:Name="Nota1" VerticalOptions="CenterAndExpand" Placeholder="Ingrese la primera nota" Grid.Row="0"/>
+            <Entry x:Name="Nota2" VerticalOptions="CenterAndExpand" Placeholder="Ingrese la segunda nota" Grid.Row="1"/>
+            <Entry x:Name="Nota3" VerticalOptions="CenterAndExpand" Placeholder="Ingrese la tercera nota" Grid.Row="2"/>
+            <Entry x:Name="Nota4" VerticalOptions="CenterAndExpand" Placeholder="Ingrese la cuarta nota" Grid.Row="3"/>
+            <Entry x:Name="Nota5" VerticalOptions="CenterAndExpand" Placeholder="Ingrese la quinta nota" Grid.Row="4"/>
+        </Grid>
+
+        <Button x:Name="BtnCalcularNota" Clicked="BtnCalcularNota_Clicked" Text="Calcular notas"/>
+        <Label x:Name="Prom" Text="Promedio Final"/>
+        <Button x:Name="Cerrar" Text="Cerrar" Clicked="Cerrar_Clicked"/>
+    </StackLayout>
+
+</ContentPage>
